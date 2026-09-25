@@ -1,0 +1,98 @@
+#index-info {
+    display: flex;
+    gap: 2em;
+}
+
+/* Info-Text: Links mit Icon + Popup (wie im Register) */
+
+#index-info a {
+  position: relative;
+}
+
+#index-info .popup {
+  color: #ffffff;
+  /* Register-Popup: 0.8em auf einem Button (~13.3px) => ~10.7px.
+     Hier sitzt das Popup in einem <a> mit 1.21rem, daher fester Wert. */
+  font-size: 0.75rem;
+  letter-spacing: normal;
+}
+
+#index-info a:hover .popup {
+  color: #ffffff !important;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.15s ease 0.6s, visibility 0s linear 0.6s;
+}
+
+#entdecken {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding-top: 2em;
+}
+
+.kachel {
+    position: relative;
+    aspect-ratio: 4 / 4.8; 
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kachel:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px #3E4955;
+}
+.kachel-bild-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.kachel-bild-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.kachel-jahr {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(62, 73, 85, 0.9);
+    padding: 8px 6px;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: center;
+    color: #F0F0F0;
+}
+
+.kachel-hover-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 0.8em 2.6em;
+    background-color: rgb(62, 73, 85, 0.9);
+    font-size: 0.75em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.3;
+    color: #F0F0F0;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.kachel:hover .kachel-hover-text {
+    opacity: 1;
+}
+
+br {
+  display: block;
+  content: "";
+  margin-top: 1em;
+}

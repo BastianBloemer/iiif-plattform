@@ -1,0 +1,40 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;  
+}
+
+#my-mirador {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#my-mirador button[aria-label="In Hilfsfenster öffnen"],
+#my-mirador [aria-label="Hilfsfensternavigation"]  {
+  display: none !important;
+}
+
+#my-mirador h3 {
+  display: none !important;
+}
+
+.mirador-companion-window-title-controls {
+  display: none !important;
+}
+
+[id$="-resource"].MuiAccordion-root,
+#select-collection-rights {
+  display: none !important;
+}
+.mui-1juypbn-CompanionArea-toggle {
+  display: none !important;
+}
+#my-mirador ul {
+  display: block;
+  flex-wrap: nowrap;
+}

@@ -1,0 +1,153 @@
+/* ============================================================
+   1. BASE
+   ============================================================ */
+
+html {
+  font-size: 14px;
+  font-family: robotomedium, sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+}
+
+.content {
+    flex: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:not(.work-beziehungen a) {
+  color: #292e33;
+  letter-spacing: 0.05rem;
+  font-size: 1.21rem;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li a{
+  text-transform: uppercase;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+a:hover {
+  color: #d70035 !important;
+  text-decoration: none !important;
+}
+
+a.active {color: #d70035 !important;
+  text-decoration: none !important;}
+
+.popup {
+  position: absolute;
+  bottom: 130%;
+  right: 0;
+  white-space: nowrap;
+  padding: 0.3em 0.6em;
+  font-size: 0.8em;
+  font-weight: bold;
+  font-style: normal;
+  color: #ffffff;
+  background-color: #3E4955;
+  border-radius: 4px;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s ease, visibility 0s linear 0.15s;
+}
+
+/* ============================================================
+   2. HEADER
+   ============================================================ */
+
+#header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: #3E4955;
+  box-sizing: border-box;
+  margin-bottom: 2em;
+  margin-top: 1.5em;
+}
+
+#logos {
+    display: flex;
+    gap: 15px;     
+    justify-content: space-between;
+    align-items: center;
+}
+
+#akademieschriften-logo img {
+  height: 56px;
+  width: auto;
+}
+
+#bbaw-logo img {
+  height: 80px;
+  width: auto;
+  display: block;
+}
+
+#bbaw-logo:hover {
+    color: #3E4955 !important;
+    text-decoration: none !important;
+}
+
+#bbaw-logo span {
+    display: block;
+    margin-top: 0.25rem;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 2.5px 22px;
+    color: #3E4955;
+}
+
+#primary-nav > li {
+  border-right: 3px #d70035 solid;
+}
+#primary-nav > li:first-child {
+  border-left: 3px #d70035 solid;
+}
+
+/* ============================================================
+   3. FOOTER
+   ============================================================ */
+
+#footer {
+  display: flex;
+  border-top: 2px solid;
+  border-top-color: #d70035;
+  margin-top: 3rem;
+  padding-bottom: 1.5em;
+  padding-top: 1em;
+ 
+}
+
+#footer li a {
+  margin-right: 2rem;
+  margin-left: 0em;
+  font-size: 15px;
+}
