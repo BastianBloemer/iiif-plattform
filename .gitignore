@@ -1,5 +1,12 @@
-.venv/
-.claude/
-sessions/
+# Python
 __pycache__/
-CLAUDE.md
+*.pyc
+.ipynb_checkpoints/
+
+# Arbeitsdateien von Claude Code
+.claude/
+
+# Editor und Betriebssystem
+.vscode/
+.idea/
+.DS_Store
